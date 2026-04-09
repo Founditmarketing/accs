@@ -787,6 +787,13 @@ html {
   border: 3px solid rgba(255, 255, 255, 0.15);
 }
 
+.team-photo-wide {
+  object-fit: cover;
+  object-position: center 15%;
+  transform: scale(0.85);
+  margin-bottom: calc(var(--space-4) + 8px);
+}
+
 .team-name {
   font-family: var(--font-heading);
   font-size: var(--text-base);
