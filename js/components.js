@@ -148,9 +148,10 @@
               <a href="about.html">About Us</a>
               <a href="services.html">Our Services</a>
               <a href="employment.html">Careers</a>
+              <a href="faq.html">FAQ</a>
               <a href="resources.html">Resources</a>
               <a href="contact.html">Contact</a>
-              <a href="https://accs7nac.flywheelsites.com/" target="_blank" rel="noopener">Natchitoches Office ↗</a>
+              <a href="privacy.html">Privacy Policy</a>
             </div>
           </div>
 
