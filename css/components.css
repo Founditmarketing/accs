@@ -444,8 +444,26 @@ html {
     --header-height: 52px;
   }
 
+  .site-header.scrolled {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .site-header.scrolled .header-inner {
     height: 52px;
+  }
+
+  .fab-call {
+    animation: none;
+  }
+
+  .hero-beacon {
+    animation: none;
+  }
+
+  .pulse-dot {
+    animation: none;
   }
 }
 
