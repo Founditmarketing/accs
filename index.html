@@ -107,9 +107,15 @@
   <!-- ═══════ HERO SECTION ═══════ -->
   <section class="hero" id="hero">
     <div class="hero-bg">
-      <video autoplay muted loop playsinline poster="assets/images/hero-care.png">
+      <video id="hero-vid" autoplay muted loop playsinline preload="auto" poster="assets/images/hero-care.png">
         <source src="assets/images/hero-video.mp4" type="video/mp4">
       </video>
+      <script>
+        var v = document.getElementById('hero-vid');
+        v.play().catch(function(){
+          document.addEventListener('touchstart', function(){v.play();}, {once:true});
+        });
+      </script>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-beacon"></div>
