@@ -297,7 +297,8 @@ html {
   z-index: 0;
 }
 
-.hero-bg img {
+.hero-bg img,
+.hero-bg video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -411,7 +412,16 @@ html {
   }
   
   .hero-content {
-    padding: var(--space-8) 0 var(--space-12);
+    padding: var(--space-8) var(--space-5) var(--space-12);
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-base);
   }
 
   .hero-beacon {
@@ -504,7 +514,8 @@ html {
   box-shadow: var(--shadow-2xl);
 }
 
-.about-image img {
+.about-image img,
+.about-image video {
   width: 100%;
   height: 400px;
   object-fit: cover;
