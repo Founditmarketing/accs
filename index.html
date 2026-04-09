@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Alternative Concept Care Services provides exceptional in-home care for elderly, disabled, and recovering adults across Louisiana. Available 24/7 — Medicaid, VA, and private pay accepted.">
+  <meta name="keywords" content="home care, in-home care, Louisiana, elderly care, disabled care, Medicaid, VA Community Care, personal care, companionship">
+  
+  <title>ACCS | We Keep Your Light Burning Bright — In-Home Care Services, Louisiana</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    /* Ripple effect */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      transform: scale(0);
+      animation: ripple-anim 0.6s ease-out;
+      pointer-events: none;
+    }
+    @keyframes ripple-anim {
+      to { transform: scale(4); opacity: 0; }
+    }
+    /* Stagger animation */
+    .stagger-in {
+      animation: fadeInUp 0.5s var(--ease-out) both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ HERO SECTION ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-care.png" alt="Compassionate caregiver sharing a warm moment with elderly client in a Louisiana home" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-beacon"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Available 24/7 Across Louisiana
+      </div>
+      
+      <h1 class="hero-title">
+        We Keep Your Light <span class="highlight">Burning Bright</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Compassionate, professional in-home care that preserves dignity and independence for your loved ones — right where they belong.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Get Started Today
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="tel:318-640-7422" class="btn btn-outline btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Call 318-640-7422
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TRUST BAR ═══════ -->
+  <section class="trust-bar" aria-label="Trust indicators">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Medicaid Accepted</span>
+        </div>
+        <div class="trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <span>VA Community Care</span>
+        </div>
+        <div class="trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>24/7 Available</span>
+        </div>
+        <div class="trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <span>Licensed &amp; Insured</span>
+        </div>
+        <div class="trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+          <span>Person-Centered Care</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT SECTION ═══════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="assets/images/services-care.png" alt="Caregiver providing attentive in-home assistance">
+          <div class="about-image-badge">
+            <div class="badge-number">24/7</div>
+            <div class="badge-text">Always Available</div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <div class="section-label" style="margin-bottom: var(--space-3);">
+            About ACCS
+          </div>
+          <h2>Compassionate Care,<br>Right at Home</h2>
+          <p>
+            You want the best for your loved ones, because well, you love them. Alternative Concept Care Services provides exceptional in-home assistance services and believes in maintaining the dignity of the elderly and disabled.
+          </p>
+          <p>
+            We assist recovering, disabled, or elderly adults in maintaining or increasing their independence while remaining in the comfort and privacy of their own home. Our professional caregivers are trained and passionate in serving others — delivering care with compassion, concern, integrity, and reliability.
+          </p>
+          <a href="about.html" class="btn btn-secondary">
+            Learn Our Story
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+
+          <div class="about-stats">
+            <div class="stat-card reveal reveal-delay-3">
+              <div class="stat-number" data-count="2" data-suffix="+">0</div>
+              <div class="stat-label">Offices</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-4">
+              <div class="stat-number" data-count="24" data-suffix="/7">0</div>
+              <div class="stat-label">Availability</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-5">
+              <div class="stat-number" data-count="9" data-suffix="+">0</div>
+              <div class="stat-label">Programs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ VALUES SECTION ═══════ -->
+  <section class="section-sm" style="background: var(--white);">
+    <div class="container">
+      <div class="values-grid stagger-grid">
+        <div class="value-card">
+          <div class="value-icon">💛</div>
+          <h3>Person-Driven</h3>
+          <p>The individual is always at the forefront. We create personalized care plans through person-centered planning and self-determination.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Compassion &amp; Empathy</h3>
+          <p>Our team members always show compassion, empathy, and respect to each other, the individual, and their families.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🏠</div>
+          <h3>Independence</h3>
+          <p>We promote independence so your loved ones can maintain their quality of life in the comfort and privacy of their own home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES SECTION ═══════ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Our Care Services</h2>
+        <p class="section-subtitle">Comprehensive in-home care solutions customized to the needs and abilities of your loved one.</p>
+      </div>
+
+      <div class="services-grid stagger-grid">
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">🕐</div>
+          <div class="service-content">
+            <h3>24 Hour Care</h3>
+            <p>Around-the-clock care and assistance for adults who are bedridden or require more intensive attention.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">🧠</div>
+          <div class="service-content">
+            <h3>Alzheimer's Care</h3>
+            <p>Specialized care designed for individuals living with Alzheimer's or dementia, ensuring safety and comfort.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">💬</div>
+          <div class="service-content">
+            <h3>Companionship</h3>
+            <p>Our caregivers provide friendly company and social interaction so your loved one never feels alone.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">🛒</div>
+          <div class="service-content">
+            <h3>Grocery &amp; Meal Prep</h3>
+            <p>We handle grocery shopping and prepare nutritious meals tailored to dietary needs and preferences.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">✨</div>
+          <div class="service-content">
+            <h3>Housekeeping</h3>
+            <p>Light housekeeping services to maintain a clean, safe, and comfortable living environment.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">🩺</div>
+          <div class="service-content">
+            <h3>Personal Care</h3>
+            <p>Assistance with bathing, grooming, dressing, and medication maintenance with dignity and respect.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="window.location='services.html'">
+          <div class="service-icon">🚗</div>
+          <div class="service-content">
+            <h3>Transportation</h3>
+            <p>Safe, reliable transportation to appointments, community activities, and errands.</p>
+            <span class="service-link">Learn More →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEAM SECTION ═══════ -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header section-header-light reveal">
+        <div class="section-label" style="color: var(--warmth-light);">Meet the Team</div>
+        <h2 class="section-title" style="color: var(--white);">Our Leadership</h2>
+        <p class="section-subtitle" style="color: var(--sky-light);">Serving our neighbors in Louisiana with quality in-home care, our team members love what they do and always provide the utmost quality of care.</p>
+      </div>
+
+      <div class="team-scroll">
+        <div class="team-card">
+          <div class="team-avatar">MT</div>
+          <div class="team-name">Michael Thompson</div>
+          <div class="team-role">Owner</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">DT</div>
+          <div class="team-name">Danny Thompson</div>
+          <div class="team-role">Owner</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">SB</div>
+          <div class="team-name">Simone Boudreaux</div>
+          <div class="team-role">Administrator</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">DW</div>
+          <div class="team-name">Dody Watts</div>
+          <div class="team-role">HR Director</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">CD</div>
+          <div class="team-name">Christi Dickey</div>
+          <div class="team-role">Billing Director</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JL</div>
+          <div class="team-name">Jessie Lollar</div>
+          <div class="team-role">HR Assistant</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">MO</div>
+          <div class="team-name">MJ O'Neal</div>
+          <div class="team-role">Front Desk</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">KJ</div>
+          <div class="team-name">Kimberly Johnson</div>
+          <div class="team-role">Care Manager</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">CP</div>
+          <div class="team-name">Connie Puckett</div>
+          <div class="team-role">Bookkeeper</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">CA</div>
+          <div class="team-name">Catherine Arter</div>
+          <div class="team-role">BSN, RN</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">TW</div>
+          <div class="team-name">Tina Wilmore</div>
+          <div class="team-role">Supervisor</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">LB</div>
+          <div class="team-name">Latasha Brown</div>
+          <div class="team-role">Care Manager</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">GB</div>
+          <div class="team-name">Gene Burns</div>
+          <div class="team-role">Project Coordinator</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JC</div>
+          <div class="team-name">Jennifer Callender</div>
+          <div class="team-role">Billing &amp; Events</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">MJ</div>
+          <div class="team-name">Matt Joiner</div>
+          <div class="team-role">Maintenance</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">LT</div>
+          <div class="team-name">Lori Thompson</div>
+          <div class="team-role">Marketing Director</div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">ZW</div>
+          <div class="team-name">Zane Wells</div>
+          <div class="team-role">Marketing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What People Are Saying</h2>
+        <p class="section-subtitle">Hear from the families and caregivers who trust ACCS every day.</p>
+      </div>
+
+      <div class="testimonial-carousel reveal">
+        <button class="carousel-btn prev" aria-label="Previous testimonial">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+        </button>
+        <button class="carousel-btn next" aria-label="Next testimonial">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+        </button>
+
+        <div class="testimonial-track">
+          <div class="testimonial-slides">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-quote-icon">"</div>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                I would like to say that ACCS is very nice to me. I appreciate all staff members. When I need to call with any questions I may have, they all try to help me. Dianna is my supervisor and she is very sweet and kind. She works hard for us. She is #1 to me.
+              </p>
+              <div class="testimonial-author">Felecia A.</div>
+              <div class="testimonial-role">Care Recipient</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-quote-icon">"</div>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                My initial interaction with my Supervisor, Janeha, was very helpful. She answered any questions I had and explained the services I would be receiving. The staff has been doing a wonderful job. I've become stronger standing and walking. It's a Blessing and I Thank God for the help I receive from ACCS.
+              </p>
+              <div class="testimonial-author">Darrell B.</div>
+              <div class="testimonial-role">Veteran</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-quote-icon">"</div>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                I am extremely pleased with ACCS. Amelia, my Supervisor, is very personable and efficient. My staff is an amazing person. She is kind and very helpful. She takes excellent care of me and makes me laugh often, which benefits me in many ways. I Thank God for my staff and ACCS every single day.
+              </p>
+              <div class="testimonial-author">Glenda F.</div>
+              <div class="testimonial-role">Care Recipient</div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-quote-icon">"</div>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                Mrs. Kimberly is my supervisor and when I say she goes above and beyond to make sure everything in the house and with the client is right, she does just that. She brings such a positive vibe. She is very professional and I love working under her.
+              </p>
+              <div class="testimonial-author">Tranita S.</div>
+              <div class="testimonial-role">Direct Service Worker</div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-quote-icon">"</div>
+              <div class="testimonial-stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"/></svg>
+              </div>
+              <p class="testimonial-text">
+                I love ACCS. They are so good to me. I've been with them for 17 years. Kim is my Supervisor and she always helps me. I love my staff and I'm never leaving ACCS.
+              </p>
+              <div class="testimonial-author">Patrick A.</div>
+              <div class="testimonial-role">Care Recipient — 17 Years</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-dot active" aria-label="Slide 1"></button>
+          <button class="carousel-dot" aria-label="Slide 2"></button>
+          <button class="carousel-dot" aria-label="Slide 3"></button>
+          <button class="carousel-dot" aria-label="Slide 4"></button>
+          <button class="carousel-dot" aria-label="Slide 5"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ WAIVER PROGRAMS ═══════ -->
+  <section class="section-sm waivers-section" id="waivers">
+    <div class="container">
+      <div class="section-header section-header-light reveal">
+        <div class="section-label" style="color: var(--warmth-light);">Accepted Programs</div>
+        <h2 class="section-title" style="color: var(--white);">Waiver Programs &amp; Payment</h2>
+        <p class="section-subtitle" style="color: var(--sky-light);">We work with a variety of funding sources to ensure access to quality care for everyone.</p>
+      </div>
+      <div class="waivers-grid reveal">
+        <span class="waiver-badge">NOW</span>
+        <span class="waiver-badge">ROW</span>
+        <span class="waiver-badge">SIL</span>
+        <span class="waiver-badge">CCW</span>
+        <span class="waiver-badge">LTPCS</span>
+        <span class="waiver-badge">EPSDT</span>
+        <span class="waiver-badge">Children's Choice</span>
+        <span class="waiver-badge">Private Pay</span>
+        <span class="waiver-badge">Veteran Community Care</span>
+        <span class="waiver-badge">Medicaid</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA SECTION ═══════ -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Get Started?</h2>
+        <p>Let us help your loved one live independently with dignity and compassion. Contact us today to learn about our personalized care plans.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Contact Us
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a href="employment.html" class="btn btn-outline btn-lg">
+            Join Our Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts (components first, then animations, then app) -->
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

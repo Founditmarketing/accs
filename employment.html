@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Join the ACCS team — apply to become a compassionate in-home caregiver serving Louisiana families. Fill out our online application today.">
+  <title>Careers | ACCS — Join Our Team</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.3); transform: scale(0); animation: ripple-anim 0.6s ease-out; pointer-events: none; }
+    @keyframes ripple-anim { to { transform: scale(4); opacity: 0; } }
+    .stagger-in { animation: fadeInUp 0.5s var(--ease-out) both; }
+    .form-panel { display: none; }
+    .form-panel:first-child { display: block; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+    .form-section-title { font-family: var(--font-heading); font-size: var(--text-lg); font-weight: 700; color: var(--navy-deep); margin: var(--space-6) 0 var(--space-4); padding-bottom: var(--space-3); border-bottom: 2px solid var(--border-light); }
+  </style>
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label" style="color: var(--warmth-light); justify-content: center;">Careers at ACCS</div>
+      <h1>Join Our Team</h1>
+      <p>Make a difference in someone's life every day. We're looking for compassionate caregivers who love serving others.</p>
+    </div>
+  </section>
+
+  <!-- Why Join -->
+  <section class="section-sm" style="background: var(--white);">
+    <div class="container">
+      <div class="values-grid stagger-grid">
+        <div class="value-card">
+          <div class="value-icon">🌟</div>
+          <h3>Meaningful Work</h3>
+          <p>Make a real difference in someone's daily life while building a rewarding career in home care.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📈</div>
+          <h3>Growth Opportunities</h3>
+          <p>Professional development and advancement opportunities in a growing organization.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤗</div>
+          <h3>Supportive Team</h3>
+          <p>Join a family-oriented team that values compassion, respect, and collaboration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employee Testimonial -->
+  <section class="section-sm">
+    <div class="container" style="max-width: 700px;">
+      <div class="card reveal" style="text-align: center; padding: var(--space-10);">
+        <div style="font-size: 48px; color: var(--warmth-light); opacity: 0.5; font-family: var(--font-display); line-height: 1;">"</div>
+        <p style="font-size: var(--text-lg); font-style: italic; color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--space-6);">
+          Mrs. Kimberly is my supervisor and when I say she goes above and beyond to make sure everything in the house and with the client is right, she does just that. She brings such a positive vibe when she comes to do the check-ups. She is very professional and I love working under her.
+        </p>
+        <p style="font-weight: 700; color: var(--navy-deep);">Tranita S.</p>
+        <p style="font-size: var(--text-sm); color: var(--text-secondary);">Direct Service Worker</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section" style="background: var(--white);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header reveal">
+        <div class="section-label">Apply Now</div>
+        <h2 class="section-title">Employment Application</h2>
+        <p class="section-subtitle">Fill out the form below to be considered for a position. All fields marked with * are required.</p>
+      </div>
+
+      <!-- Step Indicators -->
+      <div class="form-steps reveal">
+        <div class="form-step active">
+          <span class="form-step-number">1</span>
+          <span>Personal</span>
+        </div>
+        <div class="form-step">
+          <span class="form-step-number">2</span>
+          <span>Experience</span>
+        </div>
+        <div class="form-step">
+          <span class="form-step-number">3</span>
+          <span>Education</span>
+        </div>
+        <div class="form-step">
+          <span class="form-step-number">4</span>
+          <span>References</span>
+        </div>
+      </div>
+
+      <form id="employment-form" class="reveal">
+        <!-- Step 1: Personal Info -->
+        <div class="form-panel">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">First Name *</label>
+              <input type="text" class="form-input" required placeholder="First name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Last Name *</label>
+              <input type="text" class="form-input" required placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Phone *</label>
+              <input type="tel" class="form-input" required placeholder="(xxx) xxx-xxxx">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-input" required placeholder="your@email.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Street Address</label>
+            <input type="text" class="form-input" placeholder="Street address">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">City</label>
+              <input type="text" class="form-input" placeholder="City">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">State</label>
+                <input type="text" class="form-input" placeholder="LA" value="LA">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Zip</label>
+                <input type="text" class="form-input" placeholder="Zip code">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Position Applied For</label>
+            <input type="text" class="form-input" placeholder="Position title">
+          </div>
+          <div style="display: flex; justify-content: flex-end; margin-top: var(--space-6);">
+            <button type="button" class="btn btn-primary step-next">Next: Experience →</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Work History -->
+        <div class="form-panel">
+          <h3 class="form-section-title">Job Reference 1</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Previous Employer</label>
+              <input type="text" class="form-input" placeholder="Employer name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Position Title</label>
+              <input type="text" class="form-input" placeholder="Your title">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Employer Phone</label>
+              <input type="tel" class="form-input" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dates Employed</label>
+              <input type="text" class="form-input" placeholder="e.g. Jan 2020 - Dec 2023">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Reason for Leaving</label>
+            <input type="text" class="form-input" placeholder="Reason">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Job Duties</label>
+            <textarea class="form-textarea" placeholder="Describe your responsibilities..." rows="3"></textarea>
+          </div>
+
+          <h3 class="form-section-title">Job Reference 2 (Optional)</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Previous Employer</label>
+              <input type="text" class="form-input" placeholder="Employer name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Position Title</label>
+              <input type="text" class="form-input" placeholder="Your title">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Employer Phone</label>
+              <input type="tel" class="form-input" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Dates Employed</label>
+              <input type="text" class="form-input" placeholder="e.g. Jan 2020 - Dec 2023">
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-top: var(--space-6);">
+            <button type="button" class="btn btn-outline-dark step-prev">← Back</button>
+            <button type="button" class="btn btn-primary step-next">Next: Education →</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Education -->
+        <div class="form-panel">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">High School</label>
+              <input type="text" class="form-input" placeholder="School name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Graduated?</label>
+              <select class="form-select">
+                <option value="">Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="other">GED/Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">College / Trade School</label>
+              <input type="text" class="form-input" placeholder="School name (if applicable)">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Graduated?</label>
+              <select class="form-select">
+                <option value="">Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="other">In Progress/Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-top: var(--space-6);">
+            <button type="button" class="btn btn-outline-dark step-prev">← Back</button>
+            <button type="button" class="btn btn-primary step-next">Next: References →</button>
+          </div>
+        </div>
+
+        <!-- Step 4: References -->
+        <div class="form-panel">
+          <h3 class="form-section-title">Personal Reference 1</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name *</label>
+              <input type="text" class="form-input" required placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone *</label>
+              <input type="tel" class="form-input" required placeholder="Phone number">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Years Known</label>
+              <input type="text" class="form-input" placeholder="e.g. 5 years">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Relationship</label>
+              <input type="text" class="form-input" placeholder="e.g. Friend, Colleague">
+            </div>
+          </div>
+
+          <h3 class="form-section-title">Personal Reference 2</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-input" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-input" placeholder="Phone number">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Years Known</label>
+              <input type="text" class="form-input" placeholder="e.g. 3 years">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Relationship</label>
+              <input type="text" class="form-input" placeholder="e.g. Neighbor, Pastor">
+            </div>
+          </div>
+
+          <h3 class="form-section-title">Personal Reference 3</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-input" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-input" placeholder="Phone number">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Years Known</label>
+              <input type="text" class="form-input" placeholder="e.g. 10 years">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Relationship</label>
+              <input type="text" class="form-input" placeholder="e.g. Family Friend">
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-top: var(--space-8);">
+            <button type="button" class="btn btn-outline-dark step-prev">← Back</button>
+            <button type="submit" class="btn btn-primary btn-lg">Submit Application ✓</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

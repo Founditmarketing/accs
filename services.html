@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Explore ACCS in-home care services: 24 Hour Care, Alzheimer's, Companionship, Grocery Shopping, Housekeeping, Personal Care, and Transportation across Louisiana.">
+  <title>Our Services | ACCS — In-Home Care Services, Louisiana</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.3); transform: scale(0); animation: ripple-anim 0.6s ease-out; pointer-events: none; }
+    @keyframes ripple-anim { to { transform: scale(4); opacity: 0; } }
+    .stagger-in { animation: fadeInUp 0.5s var(--ease-out) both; }
+  </style>
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label" style="color: var(--warmth-light); justify-content: center;">What We Offer</div>
+      <h1>Our Services</h1>
+      <p>Comprehensive in-home care solutions customized to the unique needs of your loved one.</p>
+    </div>
+  </section>
+
+  <!-- Quick Jump -->
+  <section class="section-sm" style="background: var(--white); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3);">
+        <a href="#svc-24hr" class="btn btn-outline-dark btn-sm">🕐 24 Hour Care</a>
+        <a href="#svc-alzheimers" class="btn btn-outline-dark btn-sm">🧠 Alzheimer's</a>
+        <a href="#svc-companionship" class="btn btn-outline-dark btn-sm">💬 Companionship</a>
+        <a href="#svc-grocery" class="btn btn-outline-dark btn-sm">🛒 Grocery &amp; Meals</a>
+        <a href="#svc-housekeeping" class="btn btn-outline-dark btn-sm">✨ Housekeeping</a>
+        <a href="#svc-personal" class="btn btn-outline-dark btn-sm">🩺 Personal Care</a>
+        <a href="#svc-transport" class="btn btn-outline-dark btn-sm">🚗 Transportation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Accordion -->
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      
+      <div class="accordion-item open reveal" id="svc-24hr">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">🕐</span>
+          24 Hour Care
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content" style="max-height: 500px;">
+          <div class="accordion-content-inner">
+            <p>This is around the clock care and assistance for those adults who are bedridden or require more intensive care. Caregivers can provide assistance with daily activities, night time care, and comfort.</p>
+            <p style="margin-top: var(--space-4);">Having a caregiver around at all times ensures that your senior family member stays safe and that emergency phone calls are made promptly if necessary. No more wondering if your loved one will be able to make it to the phone if they need emergency help.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-1" id="svc-alzheimers">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">🧠</span>
+          Alzheimer's &amp; Dementia Care
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>Our specialized Alzheimer's and dementia care services provide a safe, structured environment within the comfort of home. Our trained caregivers understand the unique challenges of memory-related conditions and adapt their approach with patience and compassion.</p>
+            <p style="margin-top: var(--space-4);">We focus on maintaining familiar routines, providing cognitive stimulation, and ensuring safety while preserving your loved one's dignity and independence for as long as possible.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-2" id="svc-companionship">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">💬</span>
+          Companionship
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>We understand that family and friends can't always attend to an elderly or disabled adult every minute of every day. You have other things to do and sometimes you just need a break. Our caregivers can keep your loved one company while you are away.</p>
+            <p style="margin-top: var(--space-4);">Companionship services include conversation, social interaction, reading, games, and simply being present to provide comfort and reduce feelings of isolation and loneliness.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-3" id="svc-grocery">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">🛒</span>
+          Grocery Shopping &amp; Meal Prep
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>Proper nutrition is fundamental to good health. Our caregivers can assist with grocery shopping, meal planning, and preparation of nutritious meals tailored to your loved one's dietary needs and preferences.</p>
+            <p style="margin-top: var(--space-4);">We ensure that meals are balanced, appetizing, and prepared safely, helping your family member maintain their health and enjoy mealtimes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-4" id="svc-housekeeping">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">✨</span>
+          Housekeeping
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>A clean, organized environment is essential for comfort and safety. Our light housekeeping services include laundry, dishes, vacuuming, dusting, and general tidying to maintain a pleasant living space.</p>
+            <p style="margin-top: var(--space-4);">We focus on creating a safe, clutter-free environment that reduces the risk of falls and helps your loved one feel comfortable in their home.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-5" id="svc-personal">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">🩺</span>
+          Personal Care
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>Our personal care services include assistance with daily hygiene activities such as bathing, grooming, dressing, and medication maintenance. We provide this support with the utmost respect for your loved one's privacy and dignity.</p>
+            <p style="margin-top: var(--space-4);">Our trained caregivers understand the importance of maintaining personal hygiene routines while being sensitive to individual preferences and comfort levels.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal reveal-delay-6" id="svc-transport">
+        <button class="accordion-header">
+          <span style="font-size: 24px;">🚗</span>
+          Transportation
+          <div class="accordion-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </div>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-content-inner">
+            <p>Safe, reliable transportation to medical appointments, community activities, errands, and social engagements. Our caregivers ensure your loved one gets where they need to go, on time and with companionship along the way.</p>
+            <p style="margin-top: var(--space-4);">We understand that maintaining connections to the community and keeping up with healthcare appointments is vital to overall well-being and quality of life.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Full service list -->
+  <section class="section-sm" style="background: var(--white);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header reveal">
+        <div class="section-label">Complete Care</div>
+        <h2 class="section-title">What We Provide</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-4);" class="stagger-grid">
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Proper Personal Hygiene</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Medication Maintenance</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Proper Nutrition &amp; Meal Prep</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Support for Primary Caregiver</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Daily Living Skills</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Community Activities</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Transportation to Appointments</span>
+        </div>
+        <div class="card" style="padding: var(--space-5); display: flex; align-items: center; gap: var(--space-3);">
+          <div style="width: 8px; height: 8px; background: var(--warmth); border-radius: 50%; flex-shrink: 0;"></div>
+          <span style="font-weight: 500;">Light Housekeeping</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Need Care for Your Loved One?</h2>
+        <p>Contact us today and we'll create a personalized care plan that meets your family's unique needs.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch</a>
+          <a href="tel:318-640-7422" class="btn btn-outline btn-lg">Call 318-640-7422</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

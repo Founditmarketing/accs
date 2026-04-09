@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Health and wellness resources curated by ACCS — information on healthy aging, drug interactions, Parkinson's, Alzheimer's, Medicare, and healthy living.">
+  <title>Resources | ACCS — Health &amp; Wellness Resources</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.3); transform: scale(0); animation: ripple-anim 0.6s ease-out; pointer-events: none; }
+    @keyframes ripple-anim { to { transform: scale(4); opacity: 0; } }
+    .stagger-in { animation: fadeInUp 0.5s var(--ease-out) both; }
+  </style>
+</head>
+<body>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label" style="color: var(--warmth-light); justify-content: center;">Health Resources</div>
+      <h1>Resources</h1>
+      <p>Browse curated resources on general health, wellness, and care for your loved ones.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="resource-grid stagger-grid">
+        <a href="https://www.drugwatch.com/health/seniors/" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">🌿</div>
+          <div>
+            <h3>Healthy Aging</h3>
+            <p>Tips and information for maintaining health and vitality as we age.</p>
+          </div>
+        </a>
+
+        <a href="https://www.drugwatch.com/health/drug-interactions/" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">💊</div>
+          <div>
+            <h3>Drug Interactions</h3>
+            <p>Important information about medication interactions and safety.</p>
+          </div>
+        </a>
+
+        <a href="http://www.parkinson.org/living-with-parkinsons" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">🧠</div>
+          <div>
+            <h3>Living with Parkinson's</h3>
+            <p>Resources and support for those living with Parkinson's disease.</p>
+          </div>
+        </a>
+
+        <a href="https://www.alz.org/alzheimers_disease_what_is_alzheimers.asp" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">💜</div>
+          <div>
+            <h3>Alzheimer's &amp; Dementia</h3>
+            <p>Comprehensive information about Alzheimer's disease and dementia care.</p>
+          </div>
+        </a>
+
+        <a href="https://www.cms.gov/" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">🏛️</div>
+          <div>
+            <h3>Medicare &amp; Medicaid</h3>
+            <p>Official resources for Medicare, Medicaid, and government healthcare programs.</p>
+          </div>
+        </a>
+
+        <a href="https://healthyforgood.heart.org/" target="_blank" rel="noopener" class="resource-card">
+          <div class="resource-icon">❤️</div>
+          <div>
+            <h3>Healthy Living</h3>
+            <p>Heart-healthy tips and lifestyle guidance from the American Heart Association.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Need Help -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Need Help?</h2>
+        <p>Have a question you can't find the answer to? Our team is here to help.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+          <a href="tel:318-640-7422" class="btn btn-outline btn-lg">Call 318-640-7422</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/components.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
