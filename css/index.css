@@ -663,12 +663,8 @@ h1, h2 {
    xl: 1280px — large desktops
 */
 
-/* Bottom bar spacing for mobile */
+/* Mobile spacing */
 @media (max-width: 767px) {
-  body {
-    padding-bottom: calc(var(--tab-bar-height) + env(safe-area-inset-bottom, 0px));
-  }
-  
   .section {
     padding: var(--space-12) 0;
   }

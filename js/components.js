@@ -28,13 +28,13 @@
   // ── Brand SVG Logo ─────────────────────────────────────────────────────
   function brandLogo(height = 44) {
     const w = Math.round(height * 3.2);
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="${w}" height="${height}" fill="none" aria-hidden="true">
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="${w}" height="${height}" fill="none" aria-hidden="true" class="logo-svg">
       <!-- Golden ring -->
-      <circle cx="50" cy="50" r="34" stroke="hsl(45,95%,50%)" stroke-width="5" fill="none"/>
-      <circle cx="50" cy="50" r="26" stroke="hsl(45,95%,65%)" stroke-width="2" fill="none" opacity="0.5"/>
+      <circle cx="50" cy="50" r="34" stroke="currentColor" stroke-width="5" fill="none" opacity="0.9"/>
+      <circle cx="50" cy="50" r="26" stroke="currentColor" stroke-width="2" fill="none" opacity="0.3"/>
       <!-- Abstract caring hands -->
-      <path d="M36 58c4-14 12-22 14-22s10 8 14 22" stroke="hsl(210,90%,45%)" stroke-width="3" stroke-linecap="round" fill="none"/>
-      <path d="M40 52c2-6 6-10 10-10s8 4 10 10" stroke="hsl(210,90%,55%)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M36 58c4-14 12-22 14-22s10 8 14 22" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M40 52c2-6 6-10 10-10s8 4 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
       <!-- Beacon dot -->
       <circle cx="50" cy="32" r="3.5" fill="hsl(45,95%,50%)"/>
       <!-- ACCS logotype -->
@@ -269,7 +269,6 @@
   // ── Initialize ────────────────────────────────────────────────────────
   function init() {
     renderHeader();
-    renderTabBar();
     renderFAB();
     renderFooter();
     initHeaderScroll();
