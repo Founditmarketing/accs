@@ -5,6 +5,8 @@
 (function() {
   'use strict';
 
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // ── Scroll Reveal with enhanced easing ─────────────────────────────────
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -66,7 +68,7 @@
     const hero = document.querySelector('.hero-bg img');
     const beacon = document.querySelector('.hero-beacon');
     if (!hero) return;
-    if (window.innerWidth < 768) return;
+    if (window.innerWidth < 768 || prefersReducedMotion) return;
 
     let ticking = false;
     window.addEventListener('scroll', () => {
@@ -110,7 +112,7 @@
 
   // ── Magnetic Button Hover ─────────────────────────────────────────────
   function initMagneticButtons() {
-    if (window.innerWidth < 1024) return;
+    if (window.innerWidth < 1024 || prefersReducedMotion) return;
 
     document.querySelectorAll('.btn').forEach(btn => {
       btn.addEventListener('mousemove', function(e) {
@@ -128,7 +130,7 @@
 
   // ── Card Tilt Effect ─────────────────────────────────────────────────
   function initCardTilt() {
-    if (window.innerWidth < 1024) return;
+    if (window.innerWidth < 1024 || prefersReducedMotion) return;
 
     document.querySelectorAll('.service-card, .value-card').forEach(card => {
       card.addEventListener('mousemove', function(e) {

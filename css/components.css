@@ -25,6 +25,17 @@
   height: 60px;
 }
 
+.site-header.header-hidden {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.fab-call.fab-hidden {
+  opacity: 0;
+  transform: scale(0.6) translateY(20px);
+  pointer-events: none;
+}
+
 .header-inner {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -260,6 +271,10 @@
 }
 
 /* ── Hero Section ──────────────────────────────────────────────────────── */
+html {
+  overflow-x: hidden;
+}
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -395,7 +410,7 @@
 
   .hero-beacon {
     top: 5%;
-    right: -10%;
+    right: 5%;
     width: 200px;
     height: 200px;
   }
@@ -407,6 +422,14 @@
   .hero-actions .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .site-header {
+    --header-height: 52px;
+  }
+
+  .site-header.scrolled .header-inner {
+    height: 52px;
   }
 }
 
@@ -736,6 +759,17 @@
   object-fit: cover;
 }
 
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  margin: 0 auto var(--space-4);
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
 .team-name {
   font-family: var(--font-heading);
   font-size: var(--text-base);
@@ -753,7 +787,7 @@
 @media (min-width: 768px) {
   .team-scroll {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-5);
     overflow: visible;
     padding: 0;
@@ -767,7 +801,7 @@
 
 @media (min-width: 1024px) {
   .team-scroll {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -879,6 +913,19 @@
   cursor: pointer;
   border: none;
   padding: 0;
+  /* 44px touch target with smaller visual dot */
+  position: relative;
+}
+
+.carousel-dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .carousel-dot.active {
@@ -1041,6 +1088,9 @@
   display: block;
   font-size: var(--text-sm);
   padding: var(--space-2) 0;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-fast);
 }

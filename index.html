@@ -11,11 +11,66 @@
   
   <title>ACCS | We Keep Your Light Burning Bright — In-Home Care Services, Louisiana</title>
   
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="img/icon-192.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/components.css">
+
+  <!-- LocalBusiness Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeHealthCareService",
+    "name": "Alternative Concept Care Services",
+    "alternateName": "ACCS",
+    "url": "https://www.accs6.com",
+    "telephone": "+1-318-640-7422",
+    "email": "alternative@accs6.com",
+    "description": "Family-owned in-home care services for elderly, disabled, and recovering adults across Louisiana. Available 24/7.",
+    "areaServed": {
+      "@type": "State",
+      "name": "Louisiana"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Ball Office",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4811 Monroe Hwy",
+          "addressLocality": "Ball",
+          "addressRegion": "LA",
+          "postalCode": "71405"
+        },
+        "telephone": "+1-318-640-7422"
+      },
+      {
+        "@type": "Place",
+        "name": "Leesville Office",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1206 South 5th St",
+          "addressLocality": "Leesville",
+          "addressRegion": "LA",
+          "postalCode": "71446"
+        },
+        "telephone": "+1-337-404-9292"
+      }
+    ],
+    "sameAs": []
+  }
+  </script>
 
   <style>
     /* Ripple effect */
@@ -106,7 +161,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image reveal">
-          <img src="assets/images/services-care.png" alt="Caregiver providing attentive in-home assistance">
+          <img src="assets/images/services-care.png" alt="Caregiver providing attentive in-home assistance" loading="lazy">
           <div class="about-image-badge">
             <div class="badge-number">24/7</div>
             <div class="badge-text">Always Available</div>
@@ -277,32 +332,32 @@
 
       <div class="team-scroll">
         <div class="team-card">
-          <div class="team-avatar">MT</div>
+          <img class="team-photo" src="img/team/michael-thompson.png" alt="Michael Thompson" loading="lazy">
           <div class="team-name">Michael Thompson</div>
           <div class="team-role">Co-Owner</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar">DT</div>
+          <img class="team-photo" src="img/team/danny-thompson.png" alt="Danny Thompson" loading="lazy">
           <div class="team-name">Danny Thompson</div>
           <div class="team-role">Co-Owner</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar">SB</div>
+          <img class="team-photo" src="img/team/simone-boudreaux.png" alt="Simone Boudreaux" loading="lazy">
           <div class="team-name">Simone Boudreaux</div>
           <div class="team-role">Administrator</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar">DW</div>
+          <img class="team-photo" src="img/team/dody-watts.png" alt="Dody Watts" loading="lazy">
           <div class="team-name">Dody Watts</div>
           <div class="team-role">HR Director</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar">CA</div>
+          <img class="team-photo" src="img/team/catherine-arter.png" alt="Catherine Arter" loading="lazy">
           <div class="team-name">Catherine Arter</div>
           <div class="team-role">BSN, RN</div>
         </div>
         <div class="team-card">
-          <div class="team-avatar">LT</div>
+          <img class="team-photo" src="img/team/lori-thompson.png" alt="Lori Thompson" loading="lazy">
           <div class="team-name">Lori Thompson</div>
           <div class="team-role">Marketing Director</div>
         </div>

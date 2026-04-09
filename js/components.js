@@ -224,20 +224,41 @@
     }
   }
 
-  // ── Header Scroll Behavior ───────────────────────────────────────────
+  // ── Header Scroll Behavior (auto-hide on scroll-down) ────────────────
   function initHeaderScroll() {
     const header = document.getElementById('site-header');
+    const fab = document.getElementById('fab-call');
     if (!header) return;
 
+    let lastScrollY = 0;
     let ticking = false;
+    const isMobile = window.innerWidth < 768;
+
     window.addEventListener('scroll', () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          if (window.scrollY > 60) {
+          const currentY = window.scrollY;
+
+          // Add/remove scrolled class for background
+          if (currentY > 60) {
             header.classList.add('scrolled');
           } else {
             header.classList.remove('scrolled');
+            header.classList.remove('header-hidden');
           }
+
+          // Auto-hide on scroll-down, reveal on scroll-up (mobile only)
+          if (isMobile && currentY > 200) {
+            if (currentY > lastScrollY + 8) {
+              header.classList.add('header-hidden');
+              if (fab) fab.classList.add('fab-hidden');
+            } else if (currentY < lastScrollY - 8) {
+              header.classList.remove('header-hidden');
+              if (fab) fab.classList.remove('fab-hidden');
+            }
+          }
+
+          lastScrollY = currentY;
           ticking = false;
         });
         ticking = true;
