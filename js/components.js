@@ -82,10 +82,82 @@
         <a href="tel:318-640-7422" class="header-phone" aria-label="Call us">
           <span>318-640-7422</span>
         </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
     `;
 
     document.body.prepend(header);
+
+    // ── Mobile Menu Drawer ────────────────────────────────────────────────
+    const drawer = document.createElement('div');
+    drawer.className = 'mobile-drawer';
+    drawer.id = 'mobile-drawer';
+    drawer.innerHTML = `
+      <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+      <nav class="mobile-drawer-panel" aria-label="Mobile Navigation">
+        <div class="mobile-drawer-header">
+          <a href="index.html" class="logo" aria-label="ACCS Home">
+            ${brandLogo(36)}
+          </a>
+          <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="mobile-drawer-links">
+          <a href="index.html" ${page === 'home' ? 'class="active"' : ''}>Home</a>
+          <a href="about.html" ${page === 'about' ? 'class="active"' : ''}>About Us</a>
+          <a href="services.html" ${page === 'services' ? 'class="active"' : ''}>Services</a>
+          <a href="index.html#team" ${page === 'team' ? 'class="active"' : ''}>Our Team</a>
+          <a href="employment.html" ${page === 'careers' ? 'class="active"' : ''}>Careers</a>
+          <a href="resources.html" ${page === 'resources' ? 'class="active"' : ''}>Resources</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html" ${page === 'contact' ? 'class="active"' : ''}>Contact</a>
+        </div>
+        <div class="mobile-drawer-cta">
+          <a href="tel:318-640-7422" class="btn btn-primary" style="width:100%; justify-content:center;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            Call 318-640-7422
+          </a>
+        </div>
+      </nav>
+    `;
+    document.body.appendChild(drawer);
+
+    // ── Drawer Toggle Logic ───────────────────────────────────────────────
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const drawerEl = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('mobile-drawer-overlay');
+    const closeBtn = document.getElementById('mobile-drawer-close');
+
+    function openDrawer() {
+      drawerEl.classList.add('open');
+      menuBtn.classList.add('active');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      drawerEl.classList.remove('open');
+      menuBtn.classList.remove('active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', function() {
+      if (drawerEl.classList.contains('open')) { closeDrawer(); }
+      else { openDrawer(); }
+    });
+    overlay.addEventListener('click', closeDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+
+    // Close on link click
+    drawerEl.querySelectorAll('.mobile-drawer-links a').forEach(function(link) {
+      link.addEventListener('click', closeDrawer);
+    });
   }
 
   // ── Render Tab Bar ────────────────────────────────────────────────────

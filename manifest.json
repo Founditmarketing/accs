@@ -3,7 +3,7 @@
   "short_name": "ACCS",
   "description": "Alternative Concept Care Services — In-Home Care Across Louisiana",
   "start_url": "/",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
   "orientation": "portrait-primary",
